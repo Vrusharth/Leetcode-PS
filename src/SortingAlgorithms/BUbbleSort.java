@@ -2,7 +2,7 @@ package SortingAlgorithms;
 
 public class BUbbleSort {
     public static void Bubblesort(int[] arr){
-        int n =arr.length;
+        int n = arr.length;
         for(int i =0;i<n-1;i++){
             boolean Swapped=false;
             for(int j =0;j<n-1-i;j++){
