@@ -11,17 +11,20 @@ public class loweBound {
         int n=arr.length;
         int low=0;
         int high=n-1;
-        while(low<high){
+        int ans = n;
+        while(low<=high){
             int mid = (low+high)/2;
 
-            if(arr[mid]< t) {
-                //move to left
-                low=mid+1;
+            if(arr[mid] >= t) {
+                
+                ans = mid;
+                //move to right
+                high=mid-1;
             }
             else{
-                high=mid;
+                low=mid+1;
             }
         }
-        return low;
+        return ans;
     }
 }
