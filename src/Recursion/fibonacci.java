@@ -6,11 +6,11 @@ public class fibonacci {
         System.out.println(series(n));
     }
     public static int series(int n){
-        while(n>=0){
-            if(n==0 && n==1){
-                return 1;
+        if(n<=1){
+           return n;
             }
-        }
+
         return series(n-1)+series(n-2);
+
     }
 }
